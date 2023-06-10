@@ -20,7 +20,7 @@ use App\Http\Controllers\EnviosController;
 
 Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/hoteles', [HotelesController::class,'index'])->name('hoteles.index');
 Route::get('/hoteles/create', [HotelesController::class,'create'])->name('hoteles.creador');
